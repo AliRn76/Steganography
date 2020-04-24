@@ -1,4 +1,11 @@
 
+
+<b>This Is The Original Image:</b><br>
+![Image of APIs](outside.jpg)
+<br><br>
+<b>This Is The Image With Message</b><br>
+![Image of APIs](secured_outside.jpg)
+
 ## <b>In Linux:</b>
 
 <b>For Hide Message:</b>
@@ -13,9 +20,4 @@
   <br>
   
 ## <b>In Windows:</b>
-
-<b>This Is The Original Image:</b><br>
-![Image of APIs](outside.jpg)
-<br><br>
-<b>This Is The Image With Message</b><br>
-![Image of APIs](secured_outside.jpg)
+<b>...</b>
