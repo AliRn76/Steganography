@@ -10,7 +10,7 @@ int main( int argc, char *argv[] ) {
 	
 	if( argc == 3 ) {
 		FILE *fptr;
-		char data[MAX_FILE_SIZE];
+		unsigned char* data = (char*)malloc(MAX_FILE_SIZE);
 		
 		int y = 0;
 		while(argv[2][y]){
@@ -30,9 +30,16 @@ int main( int argc, char *argv[] ) {
 		
 		fptr = fopen(strcat(final_name, argv[1]), "wb");
 		
-		for(int j = 0;j < i-1;j++){
-			if(j>=880 && j<924)
-				fputc((data[j] ^ argv_int[j-880]), fptr);
+		int j;
+		for(j=0 ; j<i-1 ; j++){
+			if(j>=880 && j<924){
+				if(j == 880)
+					fputc((data[j] ^ argv_int[j-779]), fptr);
+				else if (argv_int[j-880])
+					fputc((data[j] ^ argv_int[j-880]), fptr);
+				else
+					fputc((data[j]),fptr);
+			}
 			else
 				fputc((data[j]),fptr);
 		}
@@ -40,9 +47,10 @@ int main( int argc, char *argv[] ) {
 		fclose(fptr);
 
 		printf("Key Secured Successfully\n\n");	
-		printf("Your Key/Message: ");
-		for(int i=0 ; i<44 ; i++)
-			printf("%c", argv_int[i]);
+		printf("Your Message:     ");
+		int z = 1;
+		while(argv_int[z])
+			printf("%c", argv_int[z++]);
 		printf("\nNew Image Name:   %s\n", final_name);	
 	}
 
