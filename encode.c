@@ -25,8 +25,8 @@ int main( int argc, char *argv[] ) {
 		//printf("%i: %c    ",i, argv_int[i]);
 	//}
 	//printf("\n");
-	while(argv[2][z])
-		printf("argv[2][%i] = %c\n", z, argv[2][z++]);
+	//while(argv[2][z])
+		//printf("argv[2][%i] = %c\n", z, argv[2][z++]);
 
 	if( argc == 3 ) {
 		//printf("The arguments supplied are %s and %s\n", argv[1], argv[2]);
@@ -57,7 +57,9 @@ int main( int argc, char *argv[] ) {
 				fputc((data[j]),fptr);
 		}
 		fclose(fptr);
-		printf("Key Secured Successfully\n");	
+		printf("Key Secured Successfully\n\n");	
+		printf("Your Key/Message:  %s\n", argv[2]);
+		printf("New Image Name:    %s\n", final_name);	
 	}
 	else if( argc > 3 ) {
 		printf("Too many arguments supplied.\n");
