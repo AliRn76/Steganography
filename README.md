@@ -8,30 +8,32 @@
 
 # In Linux:
 
-### For Hide Message: ###
-  <br>
-  ``` ./encode "outside.jpg" "Your message" ```
+<b>For Hide Message:</b>
+<br>
+<pre>./encode "outside.jpg" "Your message"</pre>
   > your message should be _max 44_ characters
 <br>
 <br>
-### For See The Message: ###
+<b> For See The Message:</b> 
 <br>
-  ```./decode "secured_outside.jpg"```
-  <br>
-  
+<pre>./decode "secured_outside.jpg"</pre>
+<br>
+
 # In Windows:
 ### Run cdm (Command Prompt) : 
    * Press windows + R ---> Type 'cmd' or 'cmd.exe'
    * Go To the address of file <br>
                 - copy address of the folder<br>
                 - paste it on cmd after 'cd' like this ---> ```cd C:\Users\Ali\Desktop\Steganography-master\Steganography-master```
-<br>
-### For Hide Message: ###
   <br>
-  ```encode.exe "outside.jpg" "Your message"```
-   > your message should be _max 44_ characters
+  
+<b>For Hide Message:</b> 
+<br>
+<pre>encode.exe "outside.jpg" "Your message"</pre>
+ > your message should be _max 44_ characters
 <br>
 <br>
-### For See The Message:### 
+  
+<b>For See The Message:</b> 
 <br>
-```decode.exe "secured_outside.jpg"```
+<pre>decode.exe "secured_outside.jpg"</pre>
