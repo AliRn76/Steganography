@@ -4,7 +4,7 @@
 <b>For Hide Message:</b>
   <br>
   <pre>./encode "outside.jpg" "Your message"</pre>
-  * your <ins>message</ins> should be at least <ins>44 characters</ins>
+  * your <ins>message</ins> should be <ins>max 44 characters</ins>
 <br>
 <br>
 <b>For See The Message:</b>
